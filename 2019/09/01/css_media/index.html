@@ -466,13 +466,14 @@ max-device-width指的是设备的实际屏幕宽度，也就是设备分辨率�
 
 <p>only用来定某种特定的媒体类型，可以用来排除不支持媒体查询的浏览器。其实only很多时候是用来对那些不支持Media Query但却支持Media Type的设备隐藏样式表的。<br>其主要有：支持媒体特性（Media Queries）的设备，正常调用样式，此时就当only不存在；对于不支持媒体特性(Media Queries)但又支持媒体类型(Media Type)的设备，这样就会不读了样式，因为其先读only而不是screen；另外不支持Media Qqueries的浏览器，不论是否支持only，样式都不会被采用。</p>
 <h2 id="三、彩蛋"><a href="#三、彩蛋" class="headerlink" title="三、彩蛋"></a>三、彩蛋</h2><p>在Media Query中如果没有明确指定Media Type，那么其默认为all，如：</p>
+<h1 style="color:red">彩蛋：现在是真的没有了，去别处看看吧，zjh，或者看看git历史记录呢？说不定可以还原！！！</h1>
+
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> media=<span class="string">"(min-width: 701px) and (max-width: 900px)"</span> href=<span class="string">"medium.css"</span> <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br></pre></td></tr></table></figure>
 
 <p>另外还有使用逗号（，）被用来表示并列或者表示或，如下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> <span class="built_in">type</span>=<span class="string">"text/css"</span> href=<span class="string">"style.css"</span> media=<span class="string">"screen and (max-width:480px), screen and (min-width:960px)"</span> /&gt;</span><br></pre></td></tr></table></figure>
 
 
-    <h1 style="color:red">现在是真的没有了，去别处看看吧，zjh，或者看看git历史记录呢？说不定可以还原！！！</h1>
 
     
 
